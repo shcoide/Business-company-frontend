@@ -1,0 +1,113 @@
+/* security.css */
+.security-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.security-overview {
+    position: relative;
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+    padding: 50px;
+    text-align: center;
+}
+
+.security-overview img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.security-overview img:hover {
+     
+}
+
+.security-overview h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.security-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.security-overview p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.security-challenges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+    padding: 50px;
+}
+
+.security-image {
+    width: 50%;
+    padding: 20px;
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.security-image img {
+    width: 100%;
+    height: auto;
+}
+
+.service-offer {
+    width: 50%;
+    padding: 20px;
+    animation: fadeInRight 1s ease forwards;
+}
+
+.service-offer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-offer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-offer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-offer ul li {
+    margin-bottom: 10px;
+}
+
+/* Keyframes for fade in animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media (max-width: 600px) {
+    .security-challenges{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
