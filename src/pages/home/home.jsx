@@ -65,6 +65,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      
       <div className="landing-image-text filter">
         <div className="landing-written">
             <div className="landing-logo"></div>
