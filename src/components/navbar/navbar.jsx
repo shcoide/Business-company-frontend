@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import "./navbar.css";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
   const [isNavbarScroll, setNavbarScroll] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
   }, []);
   return (
 <>
-  <nav className="navbar" style={{
+  <nav className="navbar" id="nav-top" style={{
     // backgroundColor: isNavbarScroll ? '#fff' : 'transparent',
     // boxShadow: isNavbarScroll ? ' 0px 5px 10px 0px #aaa' : '0 8px 30px 0 rgba(0,0,0,0)',
   }}>
@@ -53,11 +54,28 @@ const Navbar = () => {
           {/* <a href="#">Home</a> */}
         </li>
         <li>
-          <Link to="/about" onClick={closeMobileMenu}>About us</Link>
+          {/* <Link to="/about" onClick={closeMobileMenu}>About us</Link> */}
+          <ScrollLink
+        to="homepage-about" // Specify the target element's id
+        spy={true}
+        smooth={true}
+        duration={800} 
+        className="scroll"
+      >
+         About 
+      </ScrollLink>
           {/* <a href="#">About</a> */}
         </li>
         <li className="dropdown">
-          <a href="#" >Services</a>
+        <ScrollLink
+        to="homepage-services" // Specify the target element's id
+        spy={true}
+        smooth={true}
+        duration={800} 
+        className="scroll"
+      >
+        Services
+      </ScrollLink>
         {/* <div className="dropdown-content">
             <Link to="services/staffing" onClick={closeMobileMenu}>Staffing Services</Link>
             <Link to="services/permanent-staffing" onClick={closeMobileMenu}>Permanent Staffing</Link>
@@ -71,9 +89,18 @@ const Navbar = () => {
         <li>
           <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/register" onClick={closeMobileMenu}>Register Here</Link>
-        </li>
+          <ScrollLink
+        to="/contact#enquiry" 
+        spy={true}
+        smooth={true}
+        duration={800} 
+        className="scroll"
+      >
+        Enquiry Here 
+      </ScrollLink>
+        </li> */}
       </ul>
       {/* <h1 className="logo-navbar">Navbar</h1> */}
     </div>

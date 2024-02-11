@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
+
+.details{
+    height: auto;
+    /* border: 2px solid black; */
+    background-color: #027b9a;
+    background:  no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:60px 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+.details h3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Mina', sans-serif;
+}
+
+.contact-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 140px;
+    background-color: #027b9a;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 32px;
+    color: #ea8685;
+    transition: .3s linear;
+}
+
+.card:hover .icon{
+    transform: scale(4);
+    opacity: 0;
+}
+
+.card-content h3,
+.card-content span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+}
+
+.card-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color: #ea8685;
+}
+
+.card-content span{
+    bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card:hover h3{
+    opacity: 1;
+    top: 46px;
+    transition: .3s linear .3s;
+}
+
+.card:hover span{
+    opacity: 1;
+    bottom: 46px;
+    transition: .3s linear .3s;
+}
+
+
+@media screen and (max-width:900px){
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}

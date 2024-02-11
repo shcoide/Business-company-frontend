@@ -41,10 +41,12 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-    
+    .scroll{
+        cursor: pointer;
+    }
 .navbar-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 64px;
     align-items: center;
     /* border: 2px solid red; */
