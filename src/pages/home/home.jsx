@@ -157,7 +157,7 @@ const Home = () => {
         <div className="services-all">
           <h2 className='landing-buttons animate-about fade-up-4'>Variety Solution for Staffing, Technology & Digital Security</h2>
           <div className="indi-servi animate-about fade-up-9">
-          <Link to="/" >Staffing Services</Link>
+          <Link to="services/staffing" >Staffing Services</Link>
           </div>
           <div className="indi-servi animate-about fade-up-9">
             <Link to="/">Analytics</Link>
