@@ -137,39 +137,49 @@
     
     .navbar-container .hamburger-lines .line1{
         transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
+        width: 80%;
+        transition: transform 0.7s ease-in-out;
     }
 
     .navbar-container .hamburger-lines .line2{
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.01s ease-in-out;
     }
 
     .navbar-container .hamburger-lines .line3{
         transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
+        width: 50%;
+        transition: transform 0.7s ease-in-out;
     }
 
     .navbar .menu-items{
         padding-top: 100px;
-        background: #fff;
+        /* background: #ffffff; */
         height: 100vh;
-        max-width: 350px;
-        width: 70%;
+        /* max-width: 350px; */
+        width: 100%;
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
         margin: 0px;
         margin-left: -40px;
         padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.7s ease-in-out;
         box-shadow:  5px 0px 10px 0px #aaa;
         overflow: scroll;
+        /* justify-content: center; */
+        align-items: center;
+        background: rgba(160, 151, 228, 0.338);
+box-shadow: 0 8px 32px 0 rgba(16, 28, 202, 0.37);
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 10px );
+        padding-top: 30%;
     }
 
     .navbar .menu-items li{
         margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .logo{
@@ -185,6 +195,7 @@
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
         transform: rotate(45deg);
+        width: 100%;
         background-color: #000;
     }
 
@@ -195,6 +206,7 @@
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
+        width: 100%;
         background-color: #000;
     }
 

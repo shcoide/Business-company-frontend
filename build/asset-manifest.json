@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f7ad5dc.css",
+    "main.js": "/static/js/main.38c86fce.js",
+    "static/js/592.d663c625.chunk.js": "/static/js/592.d663c625.chunk.js",
+    "static/media/charles-forerunner-3fPXt37X6UQ-unsplash.jpg": "/static/media/charles-forerunner-3fPXt37X6UQ-unsplash.1e528e4ea561fc50e47d.jpg",
+    "static/media/cr=w_1499,h_1000.webp": "/static/media/cr=w_1499,h_1000.971cb7707a1c712dd9a5.webp",
+    "static/media/cr=t_0,w_99.webp": "/static/media/cr=t_0,w_99.abbb00e2eacee2546093.webp",
+    "static/media/human-resources-concept-with-hand_23-2150389117.avif": "/static/media/human-resources-concept-with-hand_23-2150389117.1c4d39b81d378f9f5753.avif",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.6f7ad5dc.css.map": "/static/css/main.6f7ad5dc.css.map",
+    "main.38c86fce.js.map": "/static/js/main.38c86fce.js.map",
+    "592.d663c625.chunk.js.map": "/static/js/592.d663c625.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f7ad5dc.css",
+    "static/js/main.38c86fce.js"
+  ]
+}

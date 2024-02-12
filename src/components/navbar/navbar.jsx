@@ -12,6 +12,7 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+    document.body.style.overflow = 'auto';
   };
   
   useEffect(() => {
@@ -54,16 +55,17 @@ const Navbar = () => {
           {/* <a href="#">Home</a> */}
         </li>
         <li>
-          {/* <Link to="/about" onClick={closeMobileMenu}>About us</Link> */}
-          <ScrollLink
+          <Link to="/about" onClick={closeMobileMenu}>About us</Link>
+          {/* <ScrollLink
         to="homepage-about" // Specify the target element's id
         spy={true}
         smooth={true}
         duration={800} 
+        onClick={closeMobileMenu}
         className="scroll"
       >
          About 
-      </ScrollLink>
+      </ScrollLink> */}
           {/* <a href="#">About</a> */}
         </li>
         <li className="dropdown">
@@ -73,18 +75,14 @@ const Navbar = () => {
         smooth={true}
         duration={800} 
         className="scroll"
+        onClick={closeMobileMenu}
       >
         Services
       </ScrollLink>
-        {/* <div className="dropdown-content">
+        <div className="dropdown-content">
             <Link to="services/staffing" onClick={closeMobileMenu}>Staffing Services</Link>
-            <Link to="services/permanent-staffing" onClick={closeMobileMenu}>Permanent Staffing</Link>
-            <Link to="services/apprenticeship" onClick={closeMobileMenu}>Apprenticeship Services</Link>
-            <Link to="services/flexi-staffing" onClick={closeMobileMenu}> Flexi Staffing</Link>
-            <Link to="services/manpower" onClick={closeMobileMenu}>Manpower Outsourcing</Link>
-            <Link to="services/naps" onClick={closeMobileMenu}>NAPS</Link>
-            <Link to="services/nats" onClick={closeMobileMenu}>NATS</Link>
-          </div> */}
+
+          </div>
         </li>
         <li>
           <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>

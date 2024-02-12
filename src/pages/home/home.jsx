@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import {Link,Outlet } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './home.css';
@@ -74,8 +75,17 @@ const Home = () => {
               <h3 className='animate-about fade-up-2 active-about'>Your Trusted Partner in Staffing Solutions, Technology Transformation & Digital Security</h3>
               </div> 
             <div className="landing-buttons animate-about fade-up-3 active-about">
-              <button type="button">Join us</button>
-              <button type="button">Our Services</button>
+            <Link to='/contact'><button type="button">Join us</button></Link>
+            {/* <Link to=''><button type="button">Our Services</button></Link> */}
+            <ScrollLink
+        to="homepage-services" // Specify the target element's id
+        spy={true}
+        smooth={true}
+        duration={800} 
+        className="scroll"
+      >
+        <button type="button">Our Services</button>
+      </ScrollLink>
               </div>   
         </div>
       </div>
@@ -165,6 +175,7 @@ const Home = () => {
           <div className="indi-servi animate-about fade-up-9">
             <Link to="/">Managed IT Services</Link>
           </div>
+          <Outlet/>
           <div className="indi-servi"></div>
           <div className="indi-servi"></div>
           <div className="indi-servi"></div>

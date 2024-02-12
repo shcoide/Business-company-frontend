@@ -1,0 +1,19 @@
+.about-image-text{
+      /* border: 2px solid red; */
+      background: url('../../../public/about/cr=w_1499\,h_1000.webp');
+      background-position: 10%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(14, 32, 148, 0.6);
+      opacity: 1;
+      background-blend-mode: darken;
+      align-items: flex-end;
+      padding-bottom: 80px;
+      min-height:100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      font-family: Inter, sans-serif;
+}

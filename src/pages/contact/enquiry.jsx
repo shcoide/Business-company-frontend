@@ -19,7 +19,7 @@ const Enquiry = () => {
           <h4>GET IN TOUCH</h4>
           <h2 className="form-headline"> Business Enquiry</h2>
           <form id="submit-form" action="">
-            <p>
+            <p className="a">
               <input
                 id="name"
                 className="form-input"
@@ -28,7 +28,7 @@ const Enquiry = () => {
               />
               <small className="name-error" />
             </p>
-            <p>
+            <p className="a">
               <input
                 id="email"
                 className="form-input"
@@ -69,7 +69,7 @@ const Enquiry = () => {
               Yes, I would like to receive communications by call / email about
               Company's services.
             </p>
-            <p className="full-width">
+            <p className="full-width btns">
               <input
                 type="submit"
                 className="submit-btn"
@@ -82,7 +82,7 @@ const Enquiry = () => {
             </p>
           </form>
         </div>
-        <div className="contacts contact-wrapper">
+        {/* <div className="contacts contact-wrapper">
           <ul>
             <li>
               We've driven online revenues of over{" "}
@@ -99,7 +99,7 @@ const Enquiry = () => {
               </li>
             </span>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

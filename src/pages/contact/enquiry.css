@@ -2,14 +2,47 @@
    
   
 .contain {
-    background-color: #eee;
+    background-color: #027B9A;
     
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
   }
-  
+  .btns>input{
+    margin:15px 10px;
+    border: 1px solid white;
+    background-color: white;
+    color: #180030;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 10px 14px;
+    transition: all .3s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btns>input:hover{
+    background-color: rgb(69, 18, 186);
+    border: 1px solid rgb(69, 18, 186);
+    color: white;
+  }
+  .btns>button{
+    margin:15px 10px;
+    border: 1px solid white;
+    background-color: white;
+    color: #180030;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 10px 14px;
+    transition: all .3s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btns>button:hover{
+    background-color: rgb(69, 18, 186);
+    border: 1px solid rgb(69, 18, 186);
+    color: white;
+  }
   div.form {
     background-color: #027B9A;
   }
@@ -91,7 +124,7 @@
   @media (min-width: 700px) {
     .wrapper {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr ;
     }
     .wrapper > * {
       padding: 2em 2em;
@@ -107,10 +140,7 @@
     color: #212d31;
   }
   
-  .form {
-    background: #fff;
-  }
-  
+
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,7 +152,9 @@
   form p {
     margin: 0;
   }
-  
+  .a{
+    grid-column: 1/3;
+  }
   .full-width {
     grid-column: 1 / 3;
   }
@@ -141,12 +173,6 @@
     border-radius: 15px;
     padding: 5px 20px;
     text-transform: uppercase;
-  }
-  button:hover, .submit-btn:hover,
-  button:focus , .submit-btn:focus{
-    background: #ec1c24;
-    outline: 0;
-    color: #eee;
   }
   .error {
     color: #ec1c24;
