@@ -22,4 +22,5 @@ then give _yarn dev_ or _npm run dev_ to start the developer server.
 
 ```bash
 yarn dev
+yarn start
 ```
