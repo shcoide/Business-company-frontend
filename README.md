@@ -2,7 +2,7 @@
 
 A freelance project for a company which is service based so I made this dummy one and send to them , they loved it and used it.
 
-live at:(https://niad-services.web.app/
+live at: https://niad-services.web.app/
 
 ## Commands to run code
 
